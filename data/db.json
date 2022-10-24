@@ -1,0 +1,158 @@
+{
+  "pets": [
+    {
+      "pet_name": "Garfield",
+      "pet_type": "Cat",
+      "pet_description": "Hates everyone",
+      "pet_skills": [
+        "Sleeping",
+        "Scratching",
+        "Cleaning"
+      ],
+      "id": 1
+    },
+    {
+      "pet_name": "Chris",
+      "pet_type": "Pig",
+      "pet_description": "Loves to eat",
+      "pet_skills": [
+        "Eating",
+        "Lazying",
+        "Sleeping"
+      ],
+      "id": 2
+    },
+    {
+      "pet_name": "dada",
+      "pet_type": "Cat",
+      "pet_description": "hgfgfhgfhgfh",
+      "pet_skills": [
+        "rere",
+        "rrr",
+        "tttt"
+      ],
+      "id": 7
+    },
+    {
+      "pet_name": "dfg",
+      "pet_type": "Cat",
+      "pet_description": "gfdg",
+      "pet_skills": [
+        "fdg",
+        "rwe",
+        "yyyy"
+      ],
+      "id": 8
+    },
+    {
+      "pet_name": "fsdf",
+      "pet_type": "Dog",
+      "pet_description": "dsfds",
+      "pet_skills": [
+        "dsfd",
+        "sdf",
+        "sdf"
+      ],
+      "id": 9
+    },
+    {
+      "pet_name": "frer",
+      "pet_type": "Dog",
+      "pet_description": "wer",
+      "pet_skills": [
+        "er",
+        "ew",
+        "wer"
+      ],
+      "id": 10
+    },
+    {
+      "pet_name": "Dadada",
+      "pet_type": "Pig",
+      "pet_description": "dfgfgbdfgdf",
+      "pet_skills": [
+        "r4535",
+        "hgf",
+        "hfgh"
+      ],
+      "id": 11
+    },
+    {
+      "pet_name": "gdfg",
+      "pet_type": "Pig",
+      "pet_description": "dfg",
+      "pet_skills": [
+        "dfg",
+        "dfg",
+        "dfg"
+      ],
+      "id": 12
+    },
+    {
+      "pet_name": "gdfg",
+      "pet_type": "Cat",
+      "pet_description": "gdfg",
+      "pet_skills": [
+        "fgfd",
+        "gfgd",
+        "fg"
+      ],
+      "id": 13
+    },
+    {
+      "pet_name": "ddd",
+      "pet_type": "Dog",
+      "pet_description": "ret",
+      "pet_skills": [
+        "ter",
+        "tert",
+        "ertertret"
+      ],
+      "id": 14
+    },
+    {
+      "pet_name": "ddd",
+      "pet_type": "Dog",
+      "pet_description": "ret",
+      "pet_skills": [
+        "ter",
+        "tert",
+        "ertertret"
+      ],
+      "id": 15
+    },
+    {
+      "pet_name": "ddd",
+      "pet_type": "Dog",
+      "pet_description": "ret",
+      "pet_skills": [
+        "ter",
+        "tert",
+        "ertertret"
+      ],
+      "id": 16
+    },
+    {
+      "pet_name": "ddd",
+      "pet_type": "Dog",
+      "pet_description": "ret",
+      "pet_skills": [
+        "ter",
+        "tert",
+        "ertertret"
+      ],
+      "id": 17
+    },
+    {
+      "pet_name": "pussy cat",
+      "pet_type": "Cat",
+      "pet_description": "kitty kitty kitty",
+      "pet_skills": [
+        "run 1",
+        "walk 1",
+        "karate 1"
+      ],
+      "id": 18
+    }
+  ]
+}

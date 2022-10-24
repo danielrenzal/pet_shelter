@@ -1,0 +1,18 @@
+.edit_form{
+    margin-top: 60px;
+
+    p{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 19px;
+    }
+
+    .save_icon{
+        background-image: url('../images/spritesheet.png');
+        background-position: -1px -126px;
+        display: inline-block;
+        height: 14px;
+        margin-right: 10px;
+        width: 14px;
+    }
+}

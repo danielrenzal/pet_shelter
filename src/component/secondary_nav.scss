@@ -1,0 +1,17 @@
+.back_btn{
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #BDBDBD;
+    display: flex;
+}
+
+.back_icon{
+    background-image: url('../images/spritesheet.png');
+    background-position: -1px -110px;
+    display: inline-block;
+    height: 14px;
+    margin-left: 6px;
+    margin-right: 15px;
+    width: 14px;
+}

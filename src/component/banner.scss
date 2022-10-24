@@ -1,0 +1,32 @@
+.banner{
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 60px;
+    width: 861px;
+
+    .banner_texts{
+        margin-bottom: 35px;
+        width: 266px;
+    }
+
+    .secondary_banner_texts{
+        margin-bottom: 40px;
+        width: 365px;
+    }
+
+    h1{
+        font-family: 'Do Hyeon';
+        font-size: 48px;
+
+        span{
+            font-family: 'Do Hyeon';
+            word-spacing: -6px;
+        }
+    }
+
+    p{
+        color: #BDBDBD;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,79 @@
+@use './global_styles';
+
+body .modal-header{
+    border: none;
+    padding-inline: 24px;
+}
+
+body .modal-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+body .modal-body{
+    font-size: 14px;
+    padding-inline: 24px;
+}
+
+.info_row{
+    margin-bottom: 18px;
+}
+
+.label{
+    color: #BDBDBD;
+    display: inline-block;
+    width: 122px;
+}
+
+.bullet{
+    margin-inline: 8px;
+}
+
+body .modal-footer{
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 14px;
+    padding-inline: 19px;
+
+    > *{
+        margin-left: 21px;
+    }
+}
+
+.likes_count{
+    color: #BDBDBD
+}
+
+.like_btn{
+    @include global_styles.button_style(#f5c388);
+    align-items: center;
+    display: flex;
+}
+
+.heart_icon{
+    background: url('../images/spritesheet.png') -1px -142px;
+    display: inline-block;
+	height: 13px;
+    margin-right: 10px;
+	width: 14px;
+}
+
+.check_icon{
+    background: url('../images/spritesheet.png') -1px -83px;
+    display: inline-block;
+	height: 11px;
+    margin-right: 10px;
+	width: 14px;
+}
+
+.home_icon{
+    background: url('../images/spritesheet.png') -1px -96px;
+    display: inline-block;
+	height: 12px;
+    margin-right: 10px;
+	width: 14px;
+}
+
+.adopt_btn{
+    @include global_styles.button_style(#FF5C4C);
+}

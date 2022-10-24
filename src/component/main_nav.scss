@@ -1,0 +1,62 @@
+@use './global_styles';
+
+nav{
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 8px 40px rgba(34, 69, 82, 0.15);
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    margin: 0 auto 50px;
+    padding: 16px;
+    width: 901px;
+
+    .brand_name{
+        color: #141414;
+        font-family: 'Do Hyeon', sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    .nav_links{
+        align-items: center;
+        display: flex;
+        gap: 50px;
+    }
+
+    a{
+        color: #BDBDBD;
+        font-size: 14px;
+        text-decoration: none;
+        &:hover{
+            color: #BDBDBD;
+        }
+    }
+
+    a.active{
+        color: #FF5C4C;
+        &:hover{
+            color: #FF5C4C;
+        }
+    }
+
+    .add_icon{
+        background-image: url('../images/spritesheet.png');
+        background-position: -1px -67px;
+        display: inline-block;
+        height: 14px;
+        margin-right: 10px;
+        width: 14px;
+    }
+
+    .add_pet_btn{
+        @include global_styles.button_style(#FF5C4C);
+        align-items: center;
+        display: flex;
+        &:hover{
+            color: white;
+        }
+
+    }
+}

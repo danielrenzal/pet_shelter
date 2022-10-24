@@ -1,0 +1,22 @@
+.add_form_banner{
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 60px;
+    width: 861px;
+
+    .add_form_banner_texts{
+        margin-bottom: 40px;
+        width: 365px;
+    }
+
+    h1{
+        font-family: 'Do Hyeon';
+        font-size: 48px;
+    }
+
+    p{
+        color: #BDBDBD;
+        font-size: 14px;
+    }
+}
