@@ -10,17 +10,12 @@ class AddPetPage extends Component{
         show_toast: false
     }
 
-    /** method to toggle toast */
-    showToast = () => {
-        this.setState({show_toast: true});
-    }
-
     render(){
         return(
             <div className="add_pet_page">
                 <SecondaryNav/>
                 <AddFormBanner/>
-                <AddForm showToast={this.showToast}/>
+                <AddForm showToast={()=>this.setState({show_toast: true})}/>
                 <ConfirmationToast
                     showToast={this.state.show_toast}
                     hideToast={()=>this.setState({show_toast: false})}

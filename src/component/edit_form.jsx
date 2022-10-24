@@ -4,25 +4,35 @@ import './edit_form.scss';
 
 class EditForm extends Component{
 
-    /** passing props to the state */
+    /** passing props.pet_info to the state */
     constructor(props){
         super(props);
         this.state = props.pet_info;
     }
 
-
-    /** method to add skills to the state.pet_skills array.
-     * parameters: event - to get the value of the input
-     *             index - to insert value to a specified index (this is needed because it's using "onChange" to add value) */
-    addSkill = (e, index) => {
+    /** 
+    *   DOCU: Method to add skills to the state.pet_skills array. <br>
+    *   Triggered by the input elements' onChange event from line 62 <br>
+    *   Last updated at: October 24, 2022
+    *   @param {object} event Requires to get the input value from event.target.value.
+    *   @param {number} index Requires to refer to specific index in the array (this is needed because it's using "onChange" to add value).
+    *   @author Daniel
+    */
+    addSkill = (event, index) => {
         let skills = this.state.pet_skills;
-        skills[index] = e.target.value;
+        skills[index] = event.target.value;
         this.setState({pet_skills: skills});
     }
 
-    /** method to submit the form */
-    handleSubmit = (e) => {
-        e.preventDefault();
+    /** 
+    *   DOCU: Method to submit form to json-server. <br>
+    *   Triggered by the form's onSubmit event from line 48 <br>
+    *   Last updated at: October 24, 2022
+    *   @param {object} event Requires to call the preventDefault method to prevent the page to refresh.
+    *   @author Daniel
+    */
+    handleSubmit = (event) => {
+        event.preventDefault();
 
         fetch("http://localhost:8000/pets/"+this.state.id, {
             method: "PUT",

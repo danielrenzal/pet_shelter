@@ -6,21 +6,23 @@ import './pet_listing.scss';
 
 class PetListing extends Component{
 
-    /** show_modal: for toggling the modal by the `details` button
-     *  pets: to be filled by an array of all pets' infos
-     *  single_pet_info: info of a specific pet that will be viewed on the details modal */
+    /*  
+        DOCU: `show_modal` - for toggling the modal by the `details` button
+        `pets` - to be filled by an array of all pets' infos
+        `single_pet_info` - info of a specific pet that will be viewed on the details modal 
+    */
     state = {
         show_modal: false,
         pets: null,
         single_pet_info: null
     }
 
-    /** method to close modal */
-    handleCloseModal = () => {
-        this.setState({show_modal: false});
-    }
-
-    /** method to fetch all pets then save to state.pets */
+    /** 
+    *   DOCU: Method to fetch all pets then save to state.pets. <br>
+    *   Triggered by this.componentDidMount from line 33 <br>
+    *   Last updated at: October 24, 2022
+    *   @author Daniel
+    */
     handleFetchPets = async () => {
         const response = await fetch("http://localhost:8000/pets");
         const data = await response.json();
@@ -62,7 +64,7 @@ class PetListing extends Component{
                     this.state.show_modal &&
                     <DetailsModal
                         showModal={this.state.show_modal}
-                        handleCloseModal={this.handleCloseModal}
+                        handleCloseModal={()=>this.setState({show_modal: false})}
                         pet_info={this.state.single_pet_info}
                     />
                 }

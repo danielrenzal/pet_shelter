@@ -4,9 +4,11 @@ import './add_form.scss';
 
 class AddForm extends Component{
 
-    /** initial values are null but eventually will be filled using onChange events from inputs.
-     * pet_type's value is "Pig" because it is the first option shown on the `select` input.
-     * If the user didn't chose an option, this will be the value for pet_type.*/
+    /*
+        DOCU: Initial values are null but eventually will be filled using onChange events from inputs.
+        pet_type's value is "Pig" because it is the first option shown on the `select` input.
+        If the user didn't chose an option, this will be the value for pet_type.
+    */
     state = {
         pet_name: null,
         pet_type: "Pig",
@@ -14,18 +16,29 @@ class AddForm extends Component{
         pet_skills: [],
     }
 
-    /** method to add skills to the state.pet_skills array.
-     * parameters: event - to get the input value
-     *             index - to insert value to a specified index (this is needed because it's using "onChange" to add value) */
+    /** 
+    *   DOCU: Method to add skills to the state.pet_skills array. <br>
+    *   Triggered by the input elements' onChange event from line 69-71 <br>
+    *   Last updated at: October 24, 2022
+    *   @param {object} event Requires to get the input value from event.target.value.
+    *   @param {number} index Requires to refer to specific index in the array (this is needed because it's using "onChange" to add value).
+    *   @author Daniel
+    */
     addSkill = (event, index) => {
         let skills = this.state.pet_skills; 
         skills[index] = event.target.value;
         this.setState({pet_skills: skills})
     }
 
-    /** method to submit the form */
-    handleSubmit = (e) => {
-        e.preventDefault();
+    /** 
+    *   DOCU: Method to submit form to json-server. <br>
+    *   Triggered by the form's onSubmit event from line 56 <br>
+    *   Last updated at: October 24, 2022
+    *   @param {object} event Requires to call the preventDefault method to prevent the page to refresh.
+    *   @author Daniel
+    */
+    handleSubmit = (event) => {
+        event.preventDefault();
 
         fetch("http://localhost:8000/pets", {
             method: "POST",

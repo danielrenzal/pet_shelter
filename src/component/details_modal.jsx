@@ -12,7 +12,12 @@ class DetailsModal extends Component{
         like_count: 0
     }
 
-    /** method to change the state when a user clicked the like button */
+    /** 
+    *   DOCU: Method to change the state when a user clicked the like button. <br>
+    *   Triggered by a button element from line 59 <br>
+    *   Last updated at: October 24, 2022
+    *   @author Daniel
+    */
     likePet = () => {
         this.setState({status: "Liked", status_icon: "check_icon", like_count: 1});
     }

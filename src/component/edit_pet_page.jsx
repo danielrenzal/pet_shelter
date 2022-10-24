@@ -12,7 +12,13 @@ class EditPetPage extends Component{
         show_toast: false
     }
 
-    /** method to fetch specific pet information */
+    /** 
+    *   DOCU: Method to fetch specific pet information then set it to state.pet_info <br>
+    *   Triggered by this.componentDidMount on line 30 <br>
+    *   Last updated at: October 24, 2022
+    *   @param {number} id Requires to fetch pet specific info.
+    *   @author Daniel
+    */
     fetchPetInfo = async (id) => {
         const response = await fetch("http://localhost:8000/pets/"+id);
         const data = await response.json();
@@ -25,11 +31,6 @@ class EditPetPage extends Component{
         this.fetchPetInfo(this.props.location.state.id);
     }
 
-    /** method to toggle toast */
-    showToast = () => {
-        this.setState({show_toast: true});
-    }
-
     render(){
         const {pet_info} = this.state;
         return(
@@ -37,7 +38,7 @@ class EditPetPage extends Component{
                 <SecondaryNav/>
                 {
                     pet_info &&
-                    <EditForm pet_info={pet_info} showToast={this.showToast} />
+                    <EditForm pet_info={pet_info} showToast={()=>this.setState({show_toast: true})} />
                 }
                 <ConfirmationToast
                     showToast={this.state.show_toast}

@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React, {Component}     from 'react';
 import {Route, BrowserRouter} from 'react-router-dom';
-import AddPetPage from './component/add_pet_page';
-import EditPetPage from './component/edit_pet_page';
-import Home from './component/home';
-import Footer from './component/footer';
+import AddPetPage             from './component/add_pet_page';
+import EditPetPage            from './component/edit_pet_page';
+import Home                   from './component/home';
+import Footer                 from './component/footer';
 
 
 class App extends Component{
