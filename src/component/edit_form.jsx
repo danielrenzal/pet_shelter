@@ -4,24 +4,23 @@ import './edit_form.scss';
 
 class EditForm extends Component{
 
-    /* passing props to the state */
+    /** passing props to the state */
     constructor(props){
         super(props);
         this.state = props.pet_info;
     }
 
 
-    /* method to add skills to the state.pet_skills array.
-       parameters: event - to get the value of the input
-                   index - to insert value to a specified index (this is needed because it's using "onChange" to add value)
-    */
+    /** method to add skills to the state.pet_skills array.
+     * parameters: event - to get the value of the input
+     *             index - to insert value to a specified index (this is needed because it's using "onChange" to add value) */
     addSkill = (e, index) => {
         let skills = this.state.pet_skills;
         skills[index] = e.target.value;
         this.setState({pet_skills: skills});
     }
 
-    /* method to submit the form */
+    /** method to submit the form */
     handleSubmit = (e) => {
         e.preventDefault();
 

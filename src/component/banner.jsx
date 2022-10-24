@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import BannerImg from '../images/banner.png';
+import BannerImg          from '../images/banner.png';
 import './banner.scss';
 
 

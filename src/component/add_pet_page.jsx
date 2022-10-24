@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import SecondaryNav from './secondary_nav';
-import AddFormBanner from './add_form_banner';
-import AddForm from './add_form';
-import ConfirmationToast from './confirmation_toast';
+import SecondaryNav       from './secondary_nav';
+import AddFormBanner      from './add_form_banner';
+import AddForm            from './add_form';
+import ConfirmationToast  from './confirmation_toast';
 
 
 class AddPetPage extends Component{
@@ -10,7 +10,7 @@ class AddPetPage extends Component{
         show_toast: false
     }
 
-    /* method to toggle toast */
+    /** method to toggle toast */
     showToast = () => {
         this.setState({show_toast: true});
     }

@@ -1,18 +1,18 @@
 import React, {Component} from 'react';
-import Modal from 'react-bootstrap/Modal';
+import Modal              from 'react-bootstrap/Modal';
 import './details_modal.scss';
 
 
 class DetailsModal extends Component{
 
-    /* variables to modify the like button once clicked */
+    /** variables to modify the like button once clicked */
     state = {
         status: "Like",
         status_icon: "heart_icon",
         like_count: 0
     }
 
-    /* method to change the state when a user clicked the like button */
+    /** method to change the state when a user clicked the like button */
     likePet = () => {
         this.setState({status: "Liked", status_icon: "check_icon", like_count: 1});
     }

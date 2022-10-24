@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Toast from 'react-bootstrap/Toast';
-import ToastContainer from 'react-bootstrap/ToastContainer';
+import Toast              from 'react-bootstrap/Toast';
+import ToastContainer     from 'react-bootstrap/ToastContainer';
 import './confirmation_toast.scss';
 
 

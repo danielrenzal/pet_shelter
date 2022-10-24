@@ -4,9 +4,9 @@ import './add_form.scss';
 
 class AddForm extends Component{
 
-    /* initial values are null but eventually will be filled using onChange events from inputs.
-       pet_type's value is "Pig" because it is the first option shown on the `select` input. If the user didn't chose an option, this will be the
-       value for pet_type.*/
+    /** initial values are null but eventually will be filled using onChange events from inputs.
+     * pet_type's value is "Pig" because it is the first option shown on the `select` input.
+     * If the user didn't chose an option, this will be the value for pet_type.*/
     state = {
         pet_name: null,
         pet_type: "Pig",
@@ -14,17 +14,16 @@ class AddForm extends Component{
         pet_skills: [],
     }
 
-    /* method to add skills to the state.pet_skills array.
-       parameters: event - to get the input value
-                   index - to insert value to a specified index (this is needed because it's using "onChange" to add value)
-    */
+    /** method to add skills to the state.pet_skills array.
+     * parameters: event - to get the input value
+     *             index - to insert value to a specified index (this is needed because it's using "onChange" to add value) */
     addSkill = (event, index) => {
         let skills = this.state.pet_skills; 
         skills[index] = event.target.value;
         this.setState({pet_skills: skills})
     }
 
-    /* method to submit the form */
+    /** method to submit the form */
     handleSubmit = (e) => {
         e.preventDefault();
 
