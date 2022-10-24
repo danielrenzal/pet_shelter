@@ -19,7 +19,7 @@ class PetListing extends Component{
 
     /* method to close modal */
     handleCloseModal = () => {
-        this.setState({showModal: false});
+        this.setState({show_modal: false});
     }
 
     /* method to fetch all pets then save to state.pets */

@@ -153,6 +153,17 @@
         "karate 1"
       ],
       "id": 18
+    },
+    {
+      "pet_name": "ert",
+      "pet_type": "Pig",
+      "pet_description": "etrt",
+      "pet_skills": [
+        "ert",
+        "gfh",
+        "cfb"
+      ],
+      "id": 19
     }
   ]
 }

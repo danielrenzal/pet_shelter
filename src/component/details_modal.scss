@@ -1,18 +1,32 @@
 @use './global_styles';
 
-body .modal-header{
-    border: none;
-    padding-inline: 24px;
-}
 
-body .modal-title{
-    font-size: 18px;
-    font-weight: bold;
-}
+body{
+    .modal-header{
+        border: none;
+        padding-inline: 24px;
+    }
 
-body .modal-body{
-    font-size: 14px;
-    padding-inline: 24px;
+    .modal-title{
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .modal-body{
+        font-size: 14px;
+        padding-inline: 24px;
+    }
+
+    .modal-footer{
+        background-color: #f2f2f2;
+        border: none;
+        font-size: 14px;
+        padding-inline: 19px;
+    
+        > *{
+            margin-left: 21px;
+        }
+    }
 }
 
 .info_row{
@@ -27,17 +41,6 @@ body .modal-body{
 
 .bullet{
     margin-inline: 8px;
-}
-
-body .modal-footer{
-    background-color: #f2f2f2;
-    border: none;
-    font-size: 14px;
-    padding-inline: 19px;
-
-    > *{
-        margin-left: 21px;
-    }
 }
 
 .likes_count{
